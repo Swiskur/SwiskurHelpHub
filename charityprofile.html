@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> HelpHub </title>
+            <meta charset="UTF-8"> 
+            <link rel="stylesheet" href="static.css">  
+            
+</head>
+<body> 
+    <h1>Charity Profile</h1>
+
+<header>
+<nav>
+    <ul>  
+        <li>  
+        <a href="index.html"> Home </a>  
+        </li>  
+        <li>  
+        <a href="charitylist.html"> Charity List </a>  
+        </li>  
+        <li>  
+        <a href="#"> Charity Profile </a>  
+        </li>   
+        </ul>  
+</nav>
+</header>
+<main>
+<br>
+<section>
+<h3>Popular Charities by Problem</h3>
+<div style="background-color: #f5fffa; padding: 55px;">
+<br>
+  <button id="mental">Mental Health Charities</button>
+  <button id="hunger">Hunger Charities</button>
+  <button id="wildlife">Wildlife Charities</button>
+  <button id="natural">Natural Disaster Charities</button>
+  <button id="family">Families in Need Charities</button>
+  <button id="sickness">Sickness Charities</button>
+
+
+  <div id="mentalin" style="display: none;">
+    <a href="https://adaa.org/" style="font-size: small;"> Anxiety and Depression Association of America; </a>
+    <a href="https://www.nami.org/Home" style="font-size: small;">National Alliance on Mental Health; </a>
+    <a href="https://www.mhanational.org/" style="font-size: small;">Mental Health America; </a>
+    <a href="https://www.jdrf.org/?_gl=1*18cojyv*_gcl_au*Njg3MjA0MTgyLjE3MTMxMjg2Mzg.&_ga=2.159220538.1646084337.1713128638-1312701125.1713128638"style="font-size: small;">The Jed Foundation; </a>
+    <a href="https://www.dbsalliance.org/" style="font-size: small;"> Depression and Biolar Support Alliance </a>
+  </div>
+
+  <div id="hungerin" style="display: none;">
+    <a href="https://www.feedingamerica.org/" style="font-size: small;"> Feeding America; </a>
+    <a href="https://www.actionagainsthunger.org/" style="font-size: small;">Action Against Hunger; </a>
+    <a href="https://grameenfoundation.org/freedom-from-hunger" style="font-size: small;">Freedom from Hunger; </a>
+    <a href="https://thp.org/"style="font-size: small;">The Hunger Project; </a>
+    <a href="https://www.nokidhungry.org/?_gl=1*g1rhw6*_gcl_au*NDc2MjEzMTU3LjE3MTMxMzA4NTk." style="font-size: small;"> No Kid Hungry </a>
+  </div>
+
+  <div id="wildlifein" style="display: none;">
+    <a href="https://secure.awf.org/page/113937/donate/1?utm_source=sembbranduspillarsb&utm_medium=cpc&utm_campaign=SEMBrandUS&ms=B24Q01E01Rhttps://secure.awf.org/page/113937/donate/1?utm_source=sembbranduspillarsb&utm_medium=cpc&utm_campaign=SEMBrandUS&ms=B24Q01E01R&msclkid=b922448eaec519e9235b2292e36971f1&utm_term=awf.org&utm_content=AWF.org" style="font-size: small;"> American Wildlife Foundation; </a>
+    <a href="https://www.rainforest-alliance.org/" style="font-size: small;">Rainforest Alliance; </a>
+    <a href="https://www.nature.org/en-us/" style="font-size: small;">The Nature Conservancy; </a>
+    <a href="https://www.nationalparks.org/"style="font-size: small;">National Parks Foundation; </a>
+    <a href="https://www.worldwildlife.org/" style="font-size: small;"> World Wildlife Fund </a>
+  </div>
+  <div id="naturalin" style="display: none;">
+    <a href="https://www.salvationarmyusa.org/usn/" style="font-size: small;"> The Salvation Army; </a>
+    <a href="https://www.directrelief.org/" style="font-size: small;">Direct Relief; </a>
+    <a href="https://www.americares.org/" style="font-size: small;">Americares; </a>
+    <a href="https://www.allhandsandhearts.org/"style="font-size: small;">All Hands and Hearts; </a>
+    <a href="https://teamrubiconusa.org/" style="font-size: small;"> Team Rubicon </a>
+  </div>
+
+  <div id="familyin" style="display: none;">
+    <a href="https://www.savethechildren.org/" style="font-size: small;"> Save the Children; </a>
+    <a href="https://familypromise.org/" style="font-size: small;">Family Promise; </a>
+    <a href="https://www.habitat.org/" style="font-size: small;">Habitat for Humanity; </a>
+    <a href="https://www.assistanceleague.org/"style="font-size: small;">Assistance League; </a>
+    <a href="https://www.worldvision.org/?_gl=1%2A1m73c99%2A_up%2AMQ..&gclid=4dee5351b0b5168af6c9354de5f11162&gclsrc=3p.ds" style="font-size: small;"> World Vision </a>
+  </div>
+
+  <div id="sicknessin" style="display: none;">
+    <a href="https://parkinsonsmi.org/" style="font-size: small;"> Michigan Parkinson Foundation; </a>
+    <a href="https://rarediseases.org/" style="font-size: small;">National Organization for Rare Disorders; </a>
+    <a href="https://lazarex.org/" style="font-size: small;">Lazarex Cancer Foundation; </a>
+    <a href="https://www.healthwellfoundation.org/"style="font-size: small;">Health Well Foundation; </a>
+    <a href="https://www.dbsalliance.org/" style="font-size: small;"> American Kidney Fund </a>
+  </div>
+  <script src="button.js"></script>
+</div>
+</section>
+
+<section>
+  <h3> Volunteering</h3>
+
+  <p>Fill out the volunteer form and we will get your info to popular charities and volunteering work!</p>
+<button id="volbutton">Volunteer Now</button>
+<br>
+<form id="inputForms" class="hidden">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  
+  <label for="email">E-mail:</label>
+  <input type="text" id="email" name="email" required>
+  <br>
+
+  <label for="phone">Phone-Number:</label>
+  <input type="text" id="phone" name="phone"required>
+  <br>
+  <button type="submit">Submit</button>
+</form>
+<script src="charityprofile.js"></script>
+</section>
+
+<img src="https://as2.ftcdn.net/v2/jpg/03/43/90/09/1000_F_343900936_HmQDWS8WfDb7Xg3aqVuObHSBK5e5uA51.jpg" alt="Food" width="500" height="300">
+<br>
+<footer>
+  <p>Author: Schaefer Wiskur<br>
+    E-mail: swiskur@my.madonna.edu
+  </p>
+</footer>
+</main>
+</body> 
+</html>

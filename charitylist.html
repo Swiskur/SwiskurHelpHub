@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> HelpHub </title>
+            <meta charset="UTF-8">  
+            <link rel="stylesheet" href="static.css"> 
+        
+</head>
+<body> 
+    <h1>Charity List</h1>
+
+<header>
+<nav>
+    <ul>  
+        <li>  
+        <a href="index.html"> Home </a>  
+        </li>  
+        <li>  
+        <a href="#"> Charity List </a>  
+        </li>  
+        <li>  
+        <a href="charityprofile.html"> Charity Profile </a>  
+        </li>   
+        </ul>  
+</nav>
+</header>
+<main>
+<br>
+
+<section>
+<h3 class="center">Search</h3>
+<form method="POST">
+    <div class="center">
+      <input type="text" name="name" placeholder="Search Your Area" required>
+      <button type="submit">Find Charities</button>
+    </div>
+  
+</form>
+</section>
+<br>
+<section>
+
+<h3 class="center">Map</h3>
+<div id="map">
+    <script src="api.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtkkgxE9Kc8A_u2wsVRuCv6ywuqjicynE&libraries=places&callback=initMap" async defer></script>
+
+</div>
+</section>
+<section>
+    <h3 style= "position: absolute; top: 150px;">Our Top Charities: Click the links to learn more about our top charaties!</h3>
+        <ul style= "position: absolute; top: 175px;"> 
+            <li> <a href="urban.html"> Urban Neighborhood Initiatives</a><button id="button1">Click for location</button></li>
+            <li> <a href="hope.html">Angels of Hope </a><button id="button2">Click for location</button></li>
+            <li> <a href="humaine.html">Humaine Society of Huron Valley </a> <button id="button3">Click for location</button></li>
+        </ul>
+    <br>
+    </section>
+<img src="https://as2.ftcdn.net/v2/jpg/04/99/22/93/1000_F_499229302_mpefr4zL4mIyEvmpEezdVDU7M531xxER.jpg" alt="Box" width="500" height="300">
+<br>
+<footer>
+    <p>Author: Schaefer Wiskur<br>
+      E-mail: swiskur@my.madonna.edu
+    </p>
+  </footer>
+</main>
+</body> 
+</html>

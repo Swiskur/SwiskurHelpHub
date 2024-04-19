@@ -1,0 +1,108 @@
+body{
+    background-color: #cbc9c9;
+}
+h1 {
+    text-align: center;
+    color: rgb(113, 7, 28);
+}
+h3 {
+    color: rgb(113, 7, 28);
+}
+label {
+    color: rgb(113, 7, 28);
+}
+footer {
+    color: rgb(113, 7, 28);
+}
+header {
+    background-color: rgb(195, 158, 244);
+    position: dynamic;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 55px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+header * {
+    display: inline;
+}
+header li {
+    margin: 50px;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+a:visited {
+    color: rgb(73, 3, 98);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Helvetica Neue', sans-serif;
+
+}
+
+a:hover {
+    color: rgb(113, 7, 28);
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 35px;
+    font-family: 'Helvetica Neue', sans-serif;
+
+}
+
+a:active {
+    color: rgb(22, 15, 101);
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 35px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.center{
+    text-align: center;
+}
+.center ul {
+    list-style-position: inside; 
+    display: inline-block;
+    padding-left: 0; 
+}
+
+.center li {
+    text-align: left; 
+}
+button {
+    color:blueviolet;
+    background-color: rgb(157, 156, 157);
+
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+}
+.hidden {
+    display: none;
+  }
+  #map {
+    height: 400px;
+    width: 100%;
+  }
